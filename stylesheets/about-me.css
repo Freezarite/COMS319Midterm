@@ -1,3 +1,15 @@
 .about-me-container {
-    margin-top: 30px;
+    margin: auto;
+    margin-top: 56px;
+    margin-bottom: 40px;
+    text-align: center;
+    max-width: 1320px;
+}
+
+.featurette-text-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
 }
