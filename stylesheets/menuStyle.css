@@ -3,7 +3,6 @@
     top: 0;
     background-color: var(--header-contrast-color);
     box-shadow: var(--header-box-shadow);
-    padding-bottom: 6px;
     z-index: 500;
 }
 
@@ -25,11 +24,12 @@ header {
 
 .nav-menu {
     position: relative;
+    padding-top: 5px;
 }
 
 .dot {
     position: absolute;
-    bottom: -10px;
+    bottom: 0px;
     left: -20px;
     width: 6px;
     height: 6px;

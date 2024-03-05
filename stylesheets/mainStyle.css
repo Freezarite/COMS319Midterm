@@ -33,3 +33,8 @@ body {
 .call-to-action:hover {
     background-color: var(--call-to-action-hover-background);
 }
+
+p {
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+}
