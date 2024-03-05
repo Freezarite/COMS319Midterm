@@ -18,15 +18,34 @@
     z-index: 500;
 }
 
+.nav-link:hover {
+    color: var(--accent-color-2) !important;
+    cursor: pointer;
+}
+
 .nav-link {
     color: var(--accent-color-1);
+    position: relative;
+    display: inline;
 }
 
-.active {
-    background-color: var(--accent-color-1) !important;
-    color: var(--primary-text-color) !important;
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: var(--accent-color-2); /* Dot color */
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    bottom: -3px; /* Adjust based on your spacing */
+    transform: translateX(-50%) scale(0);
+    transition: transform 250ms ease-in-out;
 }
 
+.nav-link:hover::after {
+    transform: translateX(-50%) scale(1); /* Show the dot on hover */
+}
 
 header {
     padding-left: 20px;
@@ -63,3 +82,4 @@ body {
     background-color: var(--call-to-action-hover-background);
     /* Additional hover styling */
 }
+
