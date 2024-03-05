@@ -71,23 +71,6 @@
             -webkit-overflow-scrolling: touch;
         }
 
-        .btn-bd-primary {
-            --bd-violet-bg: #712cf9;
-            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
-            --bs-btn-font-weight: 600;
-            --bs-btn-color: var(--bs-white);
-            --bs-btn-bg: var(--bd-violet-bg);
-            --bs-btn-border-color: var(--bd-violet-bg);
-            --bs-btn-hover-color: var(--bs-white);
-            --bs-btn-hover-bg: #6528e0;
-            --bs-btn-hover-border-color: #6528e0;
-            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-            --bs-btn-active-color: var(--bs-btn-hover-color);
-            --bs-btn-active-bg: #5a23c8;
-            --bs-btn-active-border-color: #5a23c8;
-        }
-
         .bd-mode-toggle {
             z-index: 1500;
         }
@@ -118,14 +101,13 @@
     </div>
 
     <div class="row justify-content-center align-items-center">
-        <div id="homeCarousel" class="carousel slide p-0 pointer-event" data-bs-ride="carousel" data-bs-interval="5000">
+        <div id="homeCarousel" class="carousel slide p-0 pointer-event" data-bs-ride="carousel" data-bs-interval="3000">
 
-            <div class="carousel-banner">
-                <p class="banner-text">Lets make something amazing together!</p>
+            <div class="carousel-banner" id="banner">
             </div>
 
-            <div class="carousel-inner">
-                <div class="carousel-item active">
+            <div class="carousel-inner" id="carousel-container">
+                <!--<div class="carousel-item active">
                     <div class="cImage-container">
                         <img src="./images/slide1.jpg" class="d-block cImage" alt="...">
                         <div class="image-credit"><a href="https://www.freepik.com/free-photo/website-hosting-concept-with-bright-light_26412545.htm#fromView=search&page=1&position=1&uuid=e3870551-1764-4518-aea9-b343beb182ae">Image by freepik</a></div>
@@ -136,42 +118,14 @@
                         <img src="./images/slide2.jpg" class="d-block cImage" alt="...">
                         <div class="image-credit"><a href="https://www.freepik.com/free-vector/team-mobile-web-app-development_28261617.htm#fromView=search&page=1&position=23&uuid=e3870551-1764-4518-aea9-b343beb182ae">Image by upklyak on Freepik</a></div>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
     </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-            const originalText = 'Lets make something\namazing together! '; // The text you want to type
-            const typingElement = document.querySelector('.banner-text');
-            let typedText = '';
-            let index = 0;
-
-            typingElement.innerHTML = ''; // Clear initial text
-
-            function typeLetter() {
-                if (index < originalText.length) {
-                    const currentChar = originalText.charAt(index);
-                    if (currentChar === '\n') {
-                        typedText += '<br>'; // Add a line break for newlines
-                    } else {
-                        typedText += currentChar;
-                    }
-                    typingElement.innerHTML = typedText;
-                    index++;
-                    setTimeout(typeLetter, 100); // Adjust typing speed
-                }
-            }
-
-            typeLetter(); // Start typing effect
-        });
-    </script>
-
-
 </body>
 
-<script src="./jsFiles/menuLogic.js"></script>
+<script src="./jsFiles/index.js"></script>
 
 
 
