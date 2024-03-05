@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home - Markus Roth</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
 
@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="./stylesheets/menuStyle.css">
     <link rel="stylesheet" href="stylesheets/indexStyle.css">
     <link rel="stylesheet" href="./stylesheets/mainStyle.css">
+
+    <script src="./jsFiles/menu.js"></script>
 
     <style>
         .bd-placeholder-img {
@@ -89,19 +91,20 @@
 <body style="overflow-x: hidden;">
     <div class="main-header-container">
         <header class="d-flex justify-content-left py-3">
+            <img src="./images/profile.png" alt="Markus Roth" width="40" height="40" class="rounded-circle" title="" style="margin-right: 5px;">
             <ul class="nav nav-pills nav-menu">
-                <li class="nav-item"><a href="./index.html" class="nav-link current">Home</a></li>
+                <li class="nav-item"><a href="./index.html" class="nav-link current" style="font-weight: bold;">Markus Roth</a></li>
+                <li class="nav-item"><a href="./about-me.html" class="nav-link">About me</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About me</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
                 <div class="dot selected-dot"></div>
                 <div class="dot hover-dot"></div>
-            </ul>
+            </ul>   
         </header>
     </div>
 
     <div class="row justify-content-center align-items-center">
-        <div id="homeCarousel" class="carousel slide p-0 pointer-event" data-bs-ride="carousel" data-bs-interval="3000">
+        <div id="homeCarousel" class="carousel slide p-0 pointer-event" data-bs-ride="carousel" data-bs-interval="4000">
 
             <div class="carousel-banner" id="banner">
             </div>

@@ -4,6 +4,10 @@ body {
     padding: 0;
 }
 
+h1, h2, h3 {
+    color: var(--accent-color-2);
+}
+
 body {
     background-color: var(--background-color);
     color: var(--primary-text-color);
@@ -32,4 +36,9 @@ body {
 
 .call-to-action:hover {
     background-color: var(--call-to-action-hover-background);
+}
+
+p {
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
 }

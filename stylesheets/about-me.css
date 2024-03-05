@@ -1,0 +1,31 @@
+.about-me-container {
+    margin: auto;
+    margin-top: 56px;
+    margin-bottom: 40px;
+    text-align: center;
+    max-width: 1320px;
+}
+
+.featurette-text-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    color: var(--primary-text-color);
+}
+
+.grid-header-p {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li{
+    margin-bottom: 5px;
+    color: var(--primary-text-color);
+}
