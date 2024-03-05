@@ -1,14 +1,3 @@
-:root {
-    --background-color: #121212; /* Eerie Black for background */
-    --primary-text-color: #E0E0E0; /* Platinum for primary text */
-    --secondary-text-color: #A5A5A5; /* Dark Gray for secondary text */
-    --accent-color-1: #BB86FC; /* Light Purple for the first accent color */
-    --accent-color-2: #03DAC5; /* Turquoise for the second accent color */
-    --call-to-action-background: #CF6679; /* Muted Pink for call to action button */
-    --call-to-action-text: #FFFFFF; /* White for call to action text */
-    --call-to-action-hover-background: #E57393; /* Lighter shade of Muted Pink for hover effect */
-}
-
 .main-header-container {
     position: sticky;
     top: 0;
