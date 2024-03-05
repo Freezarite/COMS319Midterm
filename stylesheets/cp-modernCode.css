@@ -7,4 +7,6 @@
     --call-to-action-background: #CF6679; /* Muted Pink for call to action button */
     --call-to-action-text: #FFFFFF; /* White for call to action text */
     --call-to-action-hover-background: #E57393; /* Lighter shade of Muted Pink for hover effect */
+    --header-contrast-color: #181818;
+    --header-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
