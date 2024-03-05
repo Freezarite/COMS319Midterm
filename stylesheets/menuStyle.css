@@ -47,3 +47,27 @@ header {
     left: -20px;
     opacity: 0; 
 }
+
+.footer-pills-container {
+    margin-right: 40px;
+}
+
+.main-footer-container {
+    background-color: var(--header-contrast-color);
+    box-shadow: var(--header-box-shadow);
+    color: var(--accent-color-1);
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.footer-nav {
+    color: var(--accent-color-1);
+    position: relative;
+    display: inline;
+    text-decoration: none;
+}
+
+.footer-nav:hover{
+    color: var(--accent-color-2) !important;
+    cursor: pointer;
+}
