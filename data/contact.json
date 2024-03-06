@@ -1,0 +1,25 @@
+{
+    "description": "If you have any further questions feel free to contact me under:",
+    "information": [
+        {
+            "icon": "phone",
+            "value": "+43 680 111 9697",
+            "text": ""
+        },
+        {
+            "icon": "email",
+            "value": "markusr@iastate.edu",
+            "text": ""
+        },
+        {
+            "icon": "github",
+            "value": "https://github.com/Freezarite",
+            "text": "Freezarite"
+        },
+        {
+            "icon": "linkedin",
+            "value": "https://www.linkedin.com/in/markus-roth-6682b3218/",
+            "text": "Markus Roth"
+        }
+    ]
+}
