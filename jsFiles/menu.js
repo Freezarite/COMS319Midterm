@@ -1,25 +1,23 @@
 document.addEventListener('DOMContentLoaded', function () {
     var navLinks = document.querySelectorAll('.nav-menu .nav-link');
-    var navMenu = document.querySelector('.nav-menu'); // Get the nav menu container
+    var navMenu = document.querySelector('.nav-menu');
     var dot = document.querySelector('.hover-dot');
-    var selectedDot = document.querySelector('.selected-dot'); // Get the selected-dot
-    var currentLink = document.querySelector('.nav-menu .current'); // Get the current menu item
+    var selectedDot; // Define selectedDot here but do not select it yet
+    var currentLink; // Define currentLink here but do not select it yet
 
-    // Function to position the selected-dot under the current menu item
     function positionSelectedDot() {
+        selectedDot = document.querySelector('.selected-dot');
+        currentLink = document.querySelector('.nav-menu .current');
+
         if (currentLink) {
             var linkRect = currentLink.getBoundingClientRect();
             var menuRect = navMenu.getBoundingClientRect();
-            var leftPosition = linkRect.left - menuRect.left + (linkRect.width / 2) - 3; // Center the dot under the current link
+            var leftPosition = linkRect.left - menuRect.left + (linkRect.width / 2) - 3;
 
-            selectedDot.style.left = leftPosition + 'px'; // Move dot to this new position
-            selectedDot.style.bottom = '0px'; // Adjust based on your layout
-
+            selectedDot.style.left = leftPosition + 'px';
+            selectedDot.style.bottom = '0px';
         }
     }
-
-    // Position the selected-dot under the current menu item on page load
-    positionSelectedDot();
 
     navLinks.forEach(function (link) {
         link.addEventListener('mouseenter', function () {
@@ -37,4 +35,22 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    // Fetch the header data, then position the dot
+    fetch('../data/profile.json')
+        .then(response => response.json())
+        .then(data => {
+            putDataIntoHeader(data);
+            positionSelectedDot();
+        })
+        .catch(error => console.error('Error fetching JSON:', error));
 });
+
+function putDataIntoHeader(json) {
+    let headerImg = document.getElementById("header-main-img");
+    let mainButton = document.getElementById("header-main-button");
+
+    headerImg.src = json["img-src"];
+    headerImg.alt = json["img-alt"];
+
+    mainButton.innerHTML = json["name"];
+}
