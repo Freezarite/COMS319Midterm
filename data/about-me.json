@@ -1,0 +1,43 @@
+{
+    "parts": [
+        {
+            "title": "Hi I am Markus Roth!",
+            "desc": "I am a Computer Science student at the FH Technikum Wien in Austria. I was always facinated about how things work and why they interact in the way they do. Naturally in this day and age this lead me to beeing interested in computers and software as well. Currently my interests lie in the area of artificial intelligence but i am always open to dive into new fields and try out new stuff!",
+            "body": {},
+            "image-src": "./images/profile.png",
+            "image-alt": "Profile-Picture"
+        },
+        {
+            "title": "Technologies i have worked with!",
+            "desc": "As a student and part time worker, I naturally aquired some experience in commonly used software development tools. These include:",
+            "body": {
+                "columns": [
+                    [
+                        "Languages:",
+                        "Java",
+                        "Python",
+                        "C++",
+                        "JS/TS",
+                        "PHP"
+                    ],
+                    [
+                        "Web-Development:",
+                        "HTML/CSS",
+                        "Angular",
+                        "Vue.js",
+                        "Bootstrap"
+                    ],
+                    [
+                        "Others:",
+                        "Git",
+                        "Maven",
+                        "Docker",
+                        "Linux"
+                    ]
+                ]
+            },
+            "image-src": "./images/profile.png",
+            "image-alt": "Profile-Picture"
+        }
+    ]
+}
