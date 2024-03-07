@@ -27,45 +27,69 @@
 
 <body style="overflow-x: hidden;">
 
-    <div class="main-header-container">
-        <header class="d-flex justify-content-left py-3">
-            <img src="" alt="" width="40" height="40" class="rounded-circle" title="" style="margin-right: 5px;"
-                id="header-main-img">
-            <ul class="nav nav-pills nav-menu">
-                <li class="nav-item"><a id="header-main-button" href="./index.html" class="nav-link"
-                        style="font-weight: bold;"></a></li>
-                <li class="nav-item"><a href="./about-me.html" class="nav-link ">About me</a></li>
-                <li class="nav-item"><a href="./projects.html" class="nav-link current">Projects</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-                <div class="dot selected-dot"></div>
-                <div class="dot hover-dot"></div>
-            </ul>
-        </header>
-    </div>
+    <div class="page-grid">
 
-    <div id="projects-container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <div class="col">
-                <div class="card shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                            dy=".3em">Thumbnail</text>
-                    </svg>
-                    <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+        <div class="main-header-container">
+            <header class="d-flex justify-content-left py-3">
+                <img src="" alt="" width="40" height="40" class="rounded-circle" title="" style="margin-right: 5px;"
+                    id="header-main-img">
+                <ul class="nav nav-pills nav-menu">
+                    <li class="nav-item"><a id="header-main-button" href="./index.html" class="nav-link"
+                            style="font-weight: bold;"></a></li>
+                    <li class="nav-item"><a href="./about-me.html" class="nav-link ">About me</a></li>
+                    <li class="nav-item"><a href="./projects.html" class="nav-link current">Projects</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                    <div class="dot selected-dot"></div>
+                    <div class="dot hover-dot"></div>
+                </ul>
+            </header>
+        </div>
+
+        <div id="projects-container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="image-container">
+                            <img width="100%" src="./images/8-puzzle.png">
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-text">8 Puzzle Solver</h2>
+                            <div class="tag-list">
+                                <div class="badge">Python</div>
                             </div>
-                            <small class="text-body-secondary">9 mins</small>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="project-short-description">
+                                   
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="image-container">
+                            <img width="100%" src="./images/8-puzzle.png">
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-text">8 Puzzle Solver</h2>
+                            <div class="d-flex justify-content-between align-items-center">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="image-container">
+                            <img width="100%" src="./images/8-puzzle.png">
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-text">8 Puzzle Solver</h2>
+                            <div class="d-flex justify-content-between align-items-center">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>
@@ -79,6 +103,7 @@
                 <li class="nav-item"><a href="./impressum.html" class="footer-nav">Impressum</a></li>
             </ul>
         </footer>
+    </div>
     </div>
 
 </body>

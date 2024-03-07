@@ -42,3 +42,9 @@ p {
     overflow-wrap: break-word;
     white-space: pre-wrap;
 }
+
+.page-grid {
+    display: grid;
+    grid-template-rows: auto min-content 1fr;
+    min-height: calc(100vh - 96px); /* Makes page fullscreen so footer is always at the bottom*/
+}
