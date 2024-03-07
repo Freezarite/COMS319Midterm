@@ -1,11 +1,10 @@
 function generateAboutMePage(jsonData) {
     var aboutMeContainer = document.getElementsByClassName("about-me-container")[0];
 
-    var count = 1; //for swaping image and text orientation
+    var count = 1; // For swapping image and text orientation
 
-    jsonData.parts.forEach(element => {
+    jsonData.parts.forEach((element, index) => { // Using index for position check
 
-        //standard containers
         let featuretteRow = document.createElement("div");
         featuretteRow.classList.add("row", "featurette");
         featuretteRow.style.marginBottom = "40px";
@@ -16,7 +15,6 @@ function generateAboutMePage(jsonData) {
 
         let featuretteImageContainer = document.createElement("div");
 
-        //swaps orientation based on count
         if (count % 2 != 0) {
             featuretteTextContainer.classList.add("col-md-7", "order-md-2");
             featuretteImageContainer.classList.add("col-md-5", "order-md-1");
@@ -27,7 +25,6 @@ function generateAboutMePage(jsonData) {
 
         count++;
 
-        //this should always be generated
         let textContainer = document.createElement("div");
         textContainer.classList.add("featurette-text-container");
 
@@ -40,19 +37,15 @@ function generateAboutMePage(jsonData) {
         paragraph.classList.add("lead");
         paragraph.innerHTML = "<br>" + element["desc"];
 
-        //append first children to textContainer
         textContainer.appendChild(textContainerTitle);
         textContainer.appendChild(paragraph);
 
-        //check if featurette includes a table
         if (!(Object.keys(element.body).length === 0 && element.body.constructor === Object)) {
             let container = createTableInContainer(element.body.columns);
             textContainer.appendChild(container);
         }
 
         featuretteTextContainer.appendChild(textContainer);
-
-        //image stuff
 
         let image = document.createElement("img");
         image.src = element["image-src"];
@@ -65,13 +58,15 @@ function generateAboutMePage(jsonData) {
         featuretteRow.appendChild(featuretteTextContainer);
         featuretteRow.appendChild(featuretteImageContainer);
 
-        if(count != jsonData.parts.length) {
+        aboutMeContainer.appendChild(featuretteRow);
+
+        // Append a divider after each featurette except the last one
+        if (index < jsonData.parts.length - 1) {
             let divider = document.createElement("hr");
             divider.classList.add("featurette-divider");
-            featuretteRow.appendChild(divider);
+            divider.style.marginBottom = "40px";
+            aboutMeContainer.appendChild(divider); // Append the divider to the container, not the row
         }
-
-        aboutMeContainer.appendChild(featuretteRow);
     });
 }
 

@@ -71,3 +71,10 @@ header {
     color: var(--accent-color-2) !important;
     cursor: pointer;
 }
+
+.main-footer-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}

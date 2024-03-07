@@ -1,0 +1,32 @@
+{
+    "projects": [
+        {
+            "name": "8 Puzzle Solver",
+            "img-src": "./images/8-puzzle.png",
+            "img-alt": "8Puzzle",
+            "tools": ["Python"],
+            "details": {}
+        },
+        {
+            "name": "Chess with Friends",
+            "img-src": "",
+            "img-alt": "",
+            "tools": [
+                "Vue.js",
+                "Nodejs",
+                "Express"
+            ],
+            "details": {}
+        },
+        {
+            "name": "The no name chicken game",
+            "img-src": "./images/chickgame.png",
+            "img-alt": "Chicken Game",
+            "tools": [
+                "C++",
+                "SDL2"
+            ],
+            "details": {}
+        }
+    ]
+}
