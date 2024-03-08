@@ -4,6 +4,7 @@
     background-color: var(--header-contrast-color);
     box-shadow: var(--header-box-shadow);
     z-index: 500;
+    height: 72px;
 }
 
 .nav-link:hover {
@@ -70,4 +71,12 @@ header {
 .footer-nav:hover{
     color: var(--accent-color-2) !important;
     cursor: pointer;
+}
+
+.main-footer-container {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+    height: 96px;
 }

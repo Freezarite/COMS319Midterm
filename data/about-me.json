@@ -36,14 +36,14 @@
                     ]
                 ]
             },
-            "image-src": "./images/profile.png",
+            "image-src": "./images/logos.png",
             "image-alt": "Profile-Picture"
         },
         {
             "title": "I am interested in:",
             "desc": "Since I like a lot of techstuff, my hobbies somwhat center around that topic as well. I like building pcs, soldering small circuits, play video games and inform my self about the newest tech infors. Outside of tech i like drawing and want to learn the piano :)",
             "body": {},
-            "image-src": "./images/profile.png",
+            "image-src": "./images/hobby.png",
             "image-alt": "Profile-Picture"
         }
     ]
