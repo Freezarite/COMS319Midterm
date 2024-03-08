@@ -100,7 +100,7 @@ function createTableInContainer(tableData) {
 
         let ul = document.createElement("ul");
 
-        for(let i = 1; i < column.length; i++) {
+        for (let i = 1; i < column.length; i++) {
             let li = document.createElement("li");
             li.innerHTML = column[i];
 
@@ -116,9 +116,11 @@ function createTableInContainer(tableData) {
     return container;
 }
 
+const baseUrl = window.location.href.split('/').slice(0, -1).join('/'); // Get the base URL without the file name
+const profileJsonUrl = `${baseUrl}/data/about-me.json`; // Construct the profile.json URL
 
-
-fetch('../data/about-me.json')
+// Fetch the header data, then position the dot
+fetch(profileJsonUrl)
     .then(response => response.json())
     .then(data => {
         generateAboutMePage(data);

@@ -7,7 +7,7 @@ function createAllProjectCards(jsonData) {
         //create general container
         let colContainer = document.createElement("div");
         colContainer.classList.add("col");
-        
+
         let cardShadow = document.createElement("div");
         cardShadow.classList.add("card", "shadow-sm");
 
@@ -69,7 +69,11 @@ function createAllProjectCards(jsonData) {
     projectsContainer.appendChild(containerToBeFilled);
 }
 
-fetch('../data/projects.json')
+const baseUrl = window.location.href.split('/').slice(0, -1).join('/'); // Get the base URL without the file name
+const profileJsonUrl = `${baseUrl}/data/projects.json`; // Construct the profile.json URL
+
+// Fetch the header data, then position the dot
+fetch(profileJsonUrl)
     .then(response => response.json())
     .then(data => {
         createAllProjectCards(data);

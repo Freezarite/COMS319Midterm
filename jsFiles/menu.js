@@ -56,4 +56,6 @@ function putDataIntoHeader(json) {
     headerImg.alt = json["img-alt"];
 
     mainButton.innerHTML = json["name"];
+
+    document.title += " | " + json["name"];
 }

@@ -73,8 +73,11 @@ function createBanner(jsonData) {
 }
 
 
-//fetchin json data
-fetch('../data/index.json')
+const baseUrl = window.location.href.split('/').slice(0, -1).join('/'); // Get the base URL without the file name
+const profileJsonUrl = `${baseUrl}/data/index.json`; // Construct the profile.json URL
+
+// Fetch the header data, then position the dot
+fetch(profileJsonUrl)
     .then(response => response.json())
     .then(data => {
         createCarouselElements(data);
