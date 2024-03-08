@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Fetch the header data, then position the dot
-    fetch('../data/profile.json')
+    fetch('./data/profile.json')
         .then(response => response.json())
         .then(data => {
             putDataIntoHeader(data);
