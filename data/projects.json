@@ -5,17 +5,19 @@
             "img-src": "./images/8-puzzle.png",
             "img-alt": "8Puzzle",
             "tools": ["Python"],
+            "desc": "Solves the famous 8-puzzle problem using 5 different algorithms",
             "details": {}
         },
         {
             "name": "Chess with Friends",
-            "img-src": "",
-            "img-alt": "",
+            "img-src": "./images/chess.png",
+            "img-alt": "chess",
             "tools": [
                 "Vue.js",
                 "Nodejs",
                 "Express"
             ],
+            "desc": "Play a game of chess with a friend using our webserver! Includes move validation and further functionalities.",
             "details": {}
         },
         {
@@ -26,6 +28,7 @@
                 "C++",
                 "SDL2"
             ],
+            "desc": "Beat your friends in a fun little 2d battler where you throw eggs at each other.",
             "details": {}
         }
     ]
