@@ -30,6 +30,18 @@
             ],
             "desc": "Beat your friends in a fun little 2d battler where you throw eggs at each other.",
             "details": {}
+        },
+        {
+            "name": "Not Doodle",
+            "img-src": "./images/notDoodle.png",
+            "img-alt": "Not Doodle Image",
+            "tools": [
+                "Expressjs",
+                "JS",
+                "PHP"
+            ],
+            "desc": "Manage your teams appointments and meetings with the tool Not Doodle.",
+            "details": {}
         }
     ]
 }
