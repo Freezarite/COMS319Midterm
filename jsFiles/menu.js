@@ -35,8 +35,11 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    const baseUrl = window.location.href.split('/').slice(0, -1).join('/'); // Get the base URL without the file name
+    const profileJsonUrl = `${baseUrl}/data/profile.json`; // Construct the profile.json URL
+
     // Fetch the header data, then position the dot
-    fetch('./data/profile.json')
+    fetch(profileJsonUrl)
         .then(response => response.json())
         .then(data => {
             putDataIntoHeader(data);
