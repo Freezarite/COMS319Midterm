@@ -9,6 +9,10 @@ document.addEventListener('DOMContentLoaded', function () {
         selectedDot = document.querySelector('.selected-dot');
         currentLink = document.querySelector('.nav-menu .current');
 
+        if (!currentLink) {
+            navMenu.removeChild(selectedDot);
+        }
+
         if (currentLink) {
             var linkRect = currentLink.getBoundingClientRect();
             var menuRect = navMenu.getBoundingClientRect();
